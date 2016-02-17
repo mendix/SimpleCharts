@@ -446,7 +446,7 @@ Example: to use steps in the graph, and a red border around the legend specify:
 Flot: "{legend: { labelBoxBorderColor: 'red' }, series : { lines : { steps : 'true' } } }"
 Highcharts: "{legend: { borderColor : 'red' }, plotOptions: { line : { step : true } } }" </description>
         </property>
-
+<!--
         <property key="enablePlotbands" type="boolean" defaultValue="false">
           <caption>Enable Plotbands</caption>
           <category>Plotband</category>
@@ -518,6 +518,6 @@ Highcharts: "{legend: { borderColor : 'red' }, plotOptions: { line : { step : tr
                           <attributeType name="Decimal"/>
                           <attributeType name="Integer"/>
             </attributeTypes>
-        </property>
+        </property> -->
   </properties>
 </widget>
