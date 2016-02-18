@@ -1,11 +1,11 @@
-/*global jQuery*/
-dojo.require("SimpleChart.widget.lib.flot.excanvas");
-dojo.require("SimpleChart.widget.lib.flot.jquery_flot_min");
-dojo.require("SimpleChart.widget.lib.flot.jquery_flot_pie_min");
-dojo.require("SimpleChart.widget.lib.flot.jquery_flot_selection_min");
-dojo.require("SimpleChart.widget.lib.flot.jquery_flot_stack_min");
-
-define(["dojo/_base/declare"],
+define([
+    "dojo/_base/declare",
+    "SimpleChart/widget/lib/flot/excanvas",
+    "SimpleChart/widget/lib/flot/jquery.flot",
+    "SimpleChart/widget/lib/flot/jquery.flot.pie",
+    "SimpleChart/widget/lib/flot/jquery.flot.selection",
+    "SimpleChart/widget/lib/flot/jquery.flot.stack",
+],
     function(declare) {
         "user strict";
         return declare(null, {
@@ -374,7 +374,7 @@ define(["dojo/_base/declare"],
                 });
                 dojo.place(this.flotNode, this.domNode);
                 this.drawLabels();
-                dojo.html.set(this.flotNode, "Loading chart..");
+                //dojo.html.set(this.flotNode, "Loading chart..");
                 return null;
             },
 
